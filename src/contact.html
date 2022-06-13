@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="/dist/output.css">
+    <!-- link fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="bg-white w-full fixed top-0 z-30">
+        <div class="m-auto h-[90px] w-full lg:w-[90%] max-w-[1200px]">
+            <div class="flex justify-between items-center py-5 px-7 lg:px-0 uppercase h-full w-full">
+                <a class="md:w-1/3 h-[70%] md:h-full" href="./home.html">
+                    <img  class="h-full" src="https://y7x8q2w8.rocketcdn.me/wp-content/uploads/2022/05/logo-algomera.png" alt="">
+                </a>
+                <div class="w-[65%] hidden xl:flex justify-end items-center text-[14px] ">
+                    <button class="custom-bottom uppercase text-[15px]">chiama ora</button>
+                </div>
+                <div class="xl:hidden">
+                    <div id="nav-icon" onclick="menu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="w-full">
+        <section class="w-full pt-[90px] mb-[60px] md:mb-[120px]">
+
+            <div class="text-center">
+                <h2 class=" text-[30px] md:text-[38px] lg:text-[56px] font-bold mb-2 leading-[80px] tracking-[-1.5px]">Richiedi un preventivo</h2>
+                <p class=" text-[16px] md:text-[18px] lg:text-[20px]">Ti chiediamo qualche informazione preliminare in modo da poter essere ricontattato dal <br> consulente più adeguato!</p>
+            </div>
+
+            <form action="" class="w-[90%] max-w-[1200px] m-auto flex flex-col">
+                <div class="grid gap-8 grid-cols-1 md:grid-cols-2 mt-[90px] mb-[20px] text-[18px]">
+                    <input class="h-[60px] border border-[#818a91] rounded-md py-[7px] px-[20px]" type="text" placeholder="Nome e Cognome*">                 
+                    <input class="h-[60px] border border-[#818a91] rounded-md py-[7px] px-[20px]" type="text" placeholder="Nome della tua attività">
+                    <input class="h-[60px] border border-[#818a91] rounded-md py-[7px] px-[20px]" type="email" name="" id="" placeholder="Email*">
+                    <input class="h-[60px] border border-[#818a91] rounded-md py-[7px] px-[20px]" type="number" name="" id="" placeholder="Numero di telefono*">
+                </div>
+                
+                <div>
+                    <h3 class="text-[36px] text-center mb-3">Cosa possiamo fare per te?</h3>
+                    <div class="grid gap-8 grid-cols-1 md:grid-cols-2">
+                        <div class="h-[60px] bg_red py-[7px] px-[20px] text-white text-[18px] font-medium flex justify-between items-center">
+                            <span>Sviluppo software in cloud</span>
+                            <input type="checkbox" name="" id="">
+                        </div>
+                        <div class="h-[60px] bg_red py-[7px] px-[20px] text-white text-[18px] font-medium flex justify-between items-center">
+                            <span>Progettazione E-commerce</span>
+                            <input type="checkbox" name="" id="">
+                        </div>
+                        <div class="h-[60px] bg_red py-[7px] px-[20px] text-white text-[18px] font-medium flex justify-between items-center">
+                            <span>Online Advertising</span>
+                            <input type="checkbox" name="" id="">
+                        </div>
+                        <div class="h-[60px] bg_red py-[7px] px-[20px] text-white text-[18px] font-medium flex justify-between items-center">
+                            <span>Sito Istituzionale</span>
+                            <input type="checkbox" name="" id="">
+                        </div>
+                        <div class="h-[60px] bg_red py-[7px] px-[20px] text-white text-[18px] font-medium flex justify-between items-center">
+                            <span>Brand Identity</span>
+                            <input type="checkbox" name="" id="">
+                        </div>
+                        <div class="h-[60px] bg_red py-[7px] px-[20px] text-white text-[18px] font-medium flex justify-between items-center">
+                            <span>Social Media Marketing</span>
+                            <input type="checkbox" name="" id="">
+                        </div>
+                        <div class="h-[60px] bg_red py-[7px] px-[20px] text-white text-[18px] font-medium flex justify-between items-center">
+                            <span>Web Analytics & CRO</span>
+                            <input type="checkbox" name="" id="">
+                        </div>
+                        <div class="h-[60px] bg_red py-[7px] px-[20px] text-white text-[18px] font-medium flex justify-between items-center">
+                            <span>Digital Marketing a 360°</span>
+                            <input type="checkbox" name="" id="">
+                        </div>
+                        <select class="h-[60px] border border-[#818a91] rounded-md py-[7px] px-[20px] text-[#2d2c2f]" name="" id="" >
+                            <option selected disabled value="">Seleziona il budget *</option>
+                            <option value="">da 8.000,00€ a 10.0000,00€</option>
+                            <option value="">da 10.000,00€ a 15.0000,00€</option>
+                            <option value="">da 15.000,00€ a 20.0000,00€</option>
+                            <option value="">Oltre 20.0000,00€</option>
+                        </select>
+                        <select class="h-[60px] border-[#818a91] border rounded-md py-[7px] px-[20px]" name="" id="" >
+                            <option selected disabled value="">Indica le tempistiche *</option>
+                            <option value="">1-3 mesi</option>
+                            <option value="">3-5 mei</option>
+                            <option value="">5-8 mesi</option>
+                            <option value="">8-12 mesi</option>
+                        </select>
+                    </div>
+                    <textarea class="border border-[#818a91] rounded-md py-[7px] px-[20px] w-full mt-8" name="" id="" cols="30" rows="10" placeholder="Raccontaci quali sfide e obiettivi stai affrontando o affronterai nei prossimi mesi..."></textarea>
+                </div>
+                <button class="custom-bottom cursor-pointer transition-all duration-500 hover:text-[#ff1659] hover:bg-transparent w-full md:w-[386px] m-auto mt-8 uppercase" type="submit">invia subito!</button>
+            </form>
+        </section>
+    </main> 
+
+    <footer class="w-full h-[841px] md:h-[471px] pt-0 md:py-[100px] bg-[#2d2c2f] mt-[-3px]">
+        <div class="w-[90%] max-w-[1200px] h-full m-auto grid justify-center text-center md:text-left grid-cols-1 md:grid-cols-4 gap-0 md:gap-[25px] lg:gap-[100px]">
+
+            <div class="text-white text-[16px] font-medium flex flex-col items-center md:items-start">
+                <img class="h-[40px]" src="../asset/img/logo.png" alt="">
+                <p class="my-4">
+                    Società Soggettiva a Direzione e Coordinamento da parte di PRIME AGENCY SRL
+                </p>
+                <p>P.IVA e CF:02501830745 <br> PEC:algomera@pec.it</p>
+            </div>
+            
+            <div class="text-white text-[16px] font-medium">
+                <h2 class="text-[17px] font-[700] uppercase text-white mb-6">brindisi hq</h2>
+                <p>
+                    <i class="fa-solid fa-location-dot red mr-2 text-[14px]"></i>
+                    Via R. Rubini, 12-Brindisi
+                </p>
+                <p>
+                    <i class="fa-solid fa-paper-plane red mr-2 text-[14px]"></i>
+                    hq@algomera.it
+                </p>
+                <div class="social mt-4 flex justify-center md:justify-start">
+                    <span>
+                        <i class="fa-brands fa-linkedin-in text-[21px]"></i>
+                    </span>
+                    <span>
+                        <i class="fa-brands fa-facebook-f text-[21px]"></i>
+                    </span>
+                    <span>
+                        <i class="fa-brands fa-instagram text-[21px]"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="text-white text-[16px] font-medium">
+                <h2 class="text-[17px] font-[700] uppercase text-white mb-6">MILANO OFFICE</h2>
+                <p>
+                    <i class="fa-solid fa-location-dot red mr-2 text-[14px]"></i>
+                    Via J. dal Verme, 7, Milano
+                </p>
+                <p>
+                    <i class="fa-solid fa-paper-plane red mr-2 text-[14px]"></i>
+                    office@algomera.it
+                </p>
+            </div>
+
+            <div class="text-white text-[16px] font-medium">
+                <h2 class="text-[17px] font-[700] uppercase text-white mb-6">INFORMAZIONI</h2>
+                <p>Contattaci</p>
+                <p>Cookie Policy</p>
+                <p>Privacy Policy</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="menu" class="fixed hidden h-full w-full xl:hidden bg-white top-[90px] left-0 z-50 uppercase py-[30px]">
+        <div class="relative h-full">
+            <div class="w-full gap-5 flex flex-col items-end p-8">
+                <a href="">chi siamo</a>
+                <a href="">clienti</a>
+                <a href="">servizi</a>
+                <a href="">certificazioni</a>
+                <a href="">contattaci</a>
+            </div>
+            <div class="w-full flex absolute bottom-[90px] px-[20px]">
+                <button class="custom-bottom w-full uppercase">chiama ora</button>
+            </div>
+        </div>
+    </div>
+    <script src="../asset/js/main.js"></script>
+</body>
+</html>
