@@ -7,3 +7,8 @@ function menu() {
     o.classList.toggle('visible');
 };
 
+
+function mail() {
+    window.location.assign('./grazie.html');
+}
+

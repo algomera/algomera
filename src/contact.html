@@ -18,7 +18,7 @@
                     <img  class="h-full" src="https://y7x8q2w8.rocketcdn.me/wp-content/uploads/2022/05/logo-algomera.png" alt="">
                 </a>
                 <div class="w-[65%] hidden xl:flex justify-end items-center text-[14px] ">
-                    <button class="custom-bottom uppercase text-[15px]">chiama ora</button>
+                    <a href="tel:+3908311811268" class="custom-bottom uppercase text-[15px]">chiama ora</a>
                 </div>
                 <div class="xl:hidden">
                     <div id="nav-icon" onclick="menu()">
@@ -38,13 +38,13 @@
                 <h2 class=" text-[30px] md:text-[38px] lg:text-[56px] font-bold mb-2 leading-[80px] tracking-[-1.5px]">Richiedi un preventivo</h2>
                 <p class=" text-[16px] md:text-[18px] lg:text-[20px]">Ti chiediamo qualche informazione preliminare in modo da poter essere ricontattato dal <br> consulente più adeguato!</p>
             </div>
-
-            <form action="" class="w-[90%] max-w-[1200px] m-auto flex flex-col">
+            <!-- info@algomera.it -->
+            <form method="post" action="mailto:info@algomera.it?subject=Contatto da landing page algomera" name="contact" enctype="text/plain" class="w-[90%] max-w-[1200px] m-auto flex flex-col">
                 <div class="grid gap-8 grid-cols-1 md:grid-cols-2 mt-[90px] mb-[20px] text-[18px]">
-                    <input class="h-[60px] border border-[#818a91] rounded-md py-[7px] px-[20px]" type="text" placeholder="Nome e Cognome*">                 
-                    <input class="h-[60px] border border-[#818a91] rounded-md py-[7px] px-[20px]" type="text" placeholder="Nome della tua attività">
-                    <input class="h-[60px] border border-[#818a91] rounded-md py-[7px] px-[20px]" type="email" name="" id="" placeholder="Email*">
-                    <input class="h-[60px] border border-[#818a91] rounded-md py-[7px] px-[20px]" type="number" name="" id="" placeholder="Numero di telefono*">
+                    <input required name="Nome" class="h-[60px] border border-[#818a91] rounded-md py-[7px] px-[20px]" type="text" placeholder="Nome e Cognome*">                 
+                    <input name="Attivita" class="h-[60px] border border-[#818a91] rounded-md py-[7px] px-[20px]" type="text" placeholder="Nome della tua attività">
+                    <input required name="Email" class="h-[60px] border border-[#818a91] rounded-md py-[7px] px-[20px]" type="email" name="" id="" placeholder="Email*">
+                    <input required name="Telefono" class="h-[60px] border border-[#818a91] rounded-md py-[7px] px-[20px]" type="number"  id="" placeholder="Numero di telefono*">
                 </div>
                 
                 <div>
@@ -52,54 +52,56 @@
                     <div class="grid gap-8 grid-cols-1 md:grid-cols-2">
                         <div class="h-[60px] bg_red py-[7px] px-[20px] text-white text-[18px] font-medium flex justify-between items-center">
                             <span>Sviluppo software in cloud</span>
-                            <input type="checkbox" name="" id="">
+                            <input type="checkbox" name="opzione selezionata" value=" Sviluppo software in cloud" id="">
                         </div>
                         <div class="h-[60px] bg_red py-[7px] px-[20px] text-white text-[18px] font-medium flex justify-between items-center">
                             <span>Progettazione E-commerce</span>
-                            <input type="checkbox" name="" id="">
+                            <input type="checkbox" name="opzione selezionata" value=" Progettazione E-commerce" id="">
                         </div>
                         <div class="h-[60px] bg_red py-[7px] px-[20px] text-white text-[18px] font-medium flex justify-between items-center">
                             <span>Online Advertising</span>
-                            <input type="checkbox" name="" id="">
+                            <input type="checkbox" name="opzione selezionata" value=" Online Advertising" id="">
                         </div>
                         <div class="h-[60px] bg_red py-[7px] px-[20px] text-white text-[18px] font-medium flex justify-between items-center">
                             <span>Sito Istituzionale</span>
-                            <input type="checkbox" name="" id="">
+                            <input type="checkbox" name="opzione selezionata" value=" Sito Istituzionale" id="">
                         </div>
                         <div class="h-[60px] bg_red py-[7px] px-[20px] text-white text-[18px] font-medium flex justify-between items-center">
                             <span>Brand Identity</span>
-                            <input type="checkbox" name="" id="">
+                            <input type="checkbox" name="opzione selezionata" value=" Brand Identity" id="">
                         </div>
                         <div class="h-[60px] bg_red py-[7px] px-[20px] text-white text-[18px] font-medium flex justify-between items-center">
                             <span>Social Media Marketing</span>
-                            <input type="checkbox" name="" id="">
+                            <input type="checkbox" name="opzione selezionata" value=" Social Media Marketing" id="">
                         </div>
                         <div class="h-[60px] bg_red py-[7px] px-[20px] text-white text-[18px] font-medium flex justify-between items-center">
-                            <span>Web Analytics & CRO</span>
-                            <input type="checkbox" name="" id="">
+                            <span>Web Analytics CRO</span>
+                            <input type="checkbox" name="opzione selezionata" value=" Web Analytics & CRO" id="">
                         </div>
                         <div class="h-[60px] bg_red py-[7px] px-[20px] text-white text-[18px] font-medium flex justify-between items-center">
                             <span>Digital Marketing a 360°</span>
-                            <input type="checkbox" name="" id="">
+                            <input type="checkbox" name="opzione selezionata" value=" Digital Marketing a 360" id="">
                         </div>
-                        <select class="h-[60px] border border-[#818a91] rounded-md py-[7px] px-[20px] text-[#2d2c2f]" name="" id="" >
+                        <select required name="budget" class="h-[60px] border border-[#818a91] rounded-md py-[7px] px-[20px] text-[#2d2c2f]" id="" >
                             <option selected disabled value="">Seleziona il budget *</option>
-                            <option value="">da 8.000,00€ a 10.0000,00€</option>
-                            <option value="">da 10.000,00€ a 15.0000,00€</option>
-                            <option value="">da 15.000,00€ a 20.0000,00€</option>
-                            <option value="">Oltre 20.0000,00€</option>
+                            <option value=" 8.000,00 - 10.0000,00">da 8.000,00€ a 10.0000,00€</option>
+                            <option value=" 10.000,00 - 15.0000,00">da 10.000,00€ a 15.0000,00€</option>
+                            <option value=" 15.000,00 - 20.0000,00">da 15.000,00€ a 20.0000,00€</option>
+                            <option value=" oltre 20.0000,00">Oltre 20.0000,00€</option>
                         </select>
-                        <select class="h-[60px] border-[#818a91] border rounded-md py-[7px] px-[20px]" name="" id="" >
+                        <select required name="tempistiche" class="h-[60px] border-[#818a91] border rounded-md py-[7px] px-[20px]" id="" >
                             <option selected disabled value="">Indica le tempistiche *</option>
-                            <option value="">1-3 mesi</option>
-                            <option value="">3-5 mei</option>
-                            <option value="">5-8 mesi</option>
-                            <option value="">8-12 mesi</option>
+                            <option value=" 1-3 mesi">1-3 mesi</option>
+                            <option value=" 3-5 mesi">3-5 mesi</option>
+                            <option value=" 5-8 mesi">5-8 mesi</option>
+                            <option value=" 8-12 mesi">8-12 mesi</option>
                         </select>
                     </div>
-                    <textarea class="border border-[#818a91] rounded-md py-[7px] px-[20px] w-full mt-8" name="" id="" cols="30" rows="10" placeholder="Raccontaci quali sfide e obiettivi stai affrontando o affronterai nei prossimi mesi..."></textarea>
+                    <textarea name="messaggio" class="border border-[#818a91] rounded-md py-[7px] px-[20px] w-full mt-8" id="" cols="30" rows="10" placeholder="Raccontaci quali sfide e obiettivi stai affrontando o affronterai nei prossimi mesi..."></textarea>
                 </div>
-                <button class="custom-bottom cursor-pointer transition-all duration-500 hover:text-[#ff1659] hover:bg-transparent w-full md:w-[386px] m-auto mt-8 uppercase" type="submit">invia subito!</button>
+                <button class="custom-bottom cursor-pointer transition-all duration-500 hover:text-[#ff1659] hover:bg-transparent w-full md:w-[386px] m-auto mt-8 uppercase" type="submit">
+                    invia subito!
+                </button>
             </form>
         </section>
     </main> 
